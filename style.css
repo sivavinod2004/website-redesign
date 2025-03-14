@@ -1,131 +1,147 @@
-/* Reset some default styles */
+*styles.css (Design and Layout)*
+
+```css
+/* Reset some basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Body and Page Layout */
+/* Body and Font Style */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header Styles */
-.header {
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* Container Class for Consistent Layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.logo-container .logo {
-    height: 50px;
+/* Header Section Styling */
+header {
+    background-color: #0069c0;
+    color: white;
+    padding: 20px 0;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #333;
-    margin-left: 20px;
-    font-size: 16px;
-    font-weight: bold;
+header .logo h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.navbar a:hover {
-    color: #0066cc;
-}
-
-/* Hero Section */
-.hero {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 50px;
+header nav ul {
+    list-style-type: none;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 3rem;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffbf00;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-color: #1e5a8a;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 30px;
 }
 
-.search-form {
-    display: flex;
-    justify-content: center;
-}
-
-.search-input {
+.hero .search input {
     padding: 10px;
     width: 300px;
     border: none;
     border-radius: 5px;
     margin-right: 10px;
+    font-size: 1em;
 }
 
-.search-button {
+.hero .search button {
     padding: 10px 20px;
-    background-color: #ff9900;
+    font-size: 1em;
+    background-color: #ffbf00;
+    color: white;
     border: none;
     border-radius: 5px;
-    color: #fff;
     cursor: pointer;
 }
 
-.search-button:hover {
-    background-color: #cc7a00;
+.hero .search button:hover {
+    background-color: #ff9f00;
 }
 
-/* Featured Articles Section */
-.featured-articles {
-    padding: 50px;
-    text-align: center;
+/* Main Content Section */
+.content {
+    padding: 40px 0;
+    background-color: white;
 }
 
-.featured-articles h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+.content h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.articles-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.popular-articles ul {
+    list-style-type: none;
 }
 
-.article {
-    background-color: #fff;
-    padding: 20px;
-    margin: 15px;
-    width: 250px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: left;
-}
-
-.article h3 {
-    font-size: 1.5rem;
+.popular-articles ul li {
     margin-bottom: 10px;
 }
 
-.article p {
-    font-size: 1rem;
+.popular-articles ul li a {
+    color: #0069c0;
+    text-decoration: none;
 }
 
-/* Footer Styles */
-.footer {
+.popular-articles ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Featured Images Section */
+.image-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Footer Section Styling */
+footer {
     background-color: #333;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
+    margin-top: 40px;
 }
-
