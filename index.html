@@ -1,16 +1,10 @@
-To redesign the Wikipedia homepage and create a *new index.html* and *styles.css*, we'll create a simple, modern, and clean design while keeping the essence of the Wikipedia layout. Below are the *index.html* and *styles.css* for a redesigned version of the Wikipedia homepage.
-
----
-
-*index.html (Redesigned Wikipedia Homepage)*
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redesigned Wikipedia</title>
+    <title>Redesigned Amazon</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,54 +13,61 @@ To redesign the Wikipedia homepage and create a *new index.html* and *styles.css
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Wikipedia</h1>
+                <h1>Amazon</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Main Page</a></li>
-                    <li><a href="#">Contents</a></li>
-                    <li><a href="#">Featured Articles</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop by Category</a></li>
+                    <li><a href="#">Today's Deals</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+<li><a href="#">Sign In</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h2>Welcome to Wikipedia!</h2>
-            <p>Your free, online source of information.</p>
             <div class="search">
-                <input type="text" placeholder="Search Wikipedia..." />
+                <input type="text" placeholder="Search Amazon" />
                 <button type="button">Search</button>
             </div>
         </div>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="main-banner">
+        <div class="container">
+            <img src="https://via.placeholder.com/1200x400?text=Amazon+Banner" alt="Main Banner">
+        </div>
     </section>
 
-    <!-- Main Content Section -->
-    <section class="content">
+    <!-- Featured Products Section -->
+    <section class="featured-products">
         <div class="container">
-            <div class="popular-articles">
-                <h3>Popular Articles</h3>
-                <ul>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Science</a></li>
-                    <li><a href="#">Mathematics</a></li>
-                    <li><a href="#">Arts</a></li>
-                    <li><a href="#">Geography</a></li>
-                </ul>
-            </div>
-            <div class="featured-images">
-                <h3>Featured Images</h3>
-                <div class="image-gallery">
-                    <img src="https://via.placeholder.com/150" alt="Image 1" />
-                    <img src="https://via.placeholder.com/150" alt="Image 2" />
-                    <img src="https://via.placeholder.com/150" alt="Image 3" />
-                    <img src="https://via.placeholder.com/150" alt="Image 4" />
-                    </div>
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://via.placeholder.com/200" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Price: ₹999</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>Price: ₹1299</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="product">
+<img src="https://via.placeholder.com/200" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>Price: ₹1499</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200" alt="Product 4">
+                    <h3>Product 4</h3>
+                    <p>Price: ₹899</p>
+                    <button>Buy Now</button>
+                </div>
             </div>
         </div>
     </section>
@@ -74,9 +75,13 @@ To redesign the Wikipedia homepage and create a *new index.html* and *styles.css
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Wikipedia Redesign | All Rights Reserved</p>
+            <p>&copy; 2025 Amazon Redesign | All Rights Reserved</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
 
 </body>
 </html>
+```
+
+---
