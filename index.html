@@ -1,36 +1,82 @@
+To redesign the Wikipedia homepage and create a *new index.html* and *styles.css*, we'll create a simple, modern, and clean design while keeping the essence of the Wikipedia layout. Below are the *index.html* and *styles.css* for a redesigned version of the Wikipedia homepage.
+
+---
+
+*index.html (Redesigned Wikipedia Homepage)*
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wikipedia Redesign</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Redesigned Wikipedia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Wikipedia</h1>
-        <p>The Free Encyclopedia</p>
+        <div class="container">
+            <div class="logo">
+                <h1>Wikipedia</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Main Page</a></li>
+                    <li><a href="#">Contents</a></li>
+                    <li><a href="#">Featured Articles</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="search">
-        <input type="text" placeholder="Search Wikipedia" />
-        <button>Search</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Wikipedia!</h2>
+            <p>Your free, online source of information.</p>
+            <div class="search">
+                <input type="text" placeholder="Search Wikipedia..." />
+                <button type="button">Search</button>
+            </div>
+        </div>
     </section>
 
-    <section class="languages">
-        <h2>Read Wikipedia in your language</h2>
-        <ul>
-            <li><a href="#">English</a></li>
-            <li><a href="#">Español</a></li>
-            <li><a href="#">Français</a></li>
-            <li><a href="#">Deutsch</a></li>
-            <li><a href="#">Italiano</a></li>
-            <!-- Add more languages as needed -->
-        </ul>
+    <!-- Main Content Section -->
+    <section class="content">
+        <div class="container">
+            <div class="popular-articles">
+                <h3>Popular Articles</h3>
+                <ul>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Arts</a></li>
+                    <li><a href="#">Geography</a></li>
+                </ul>
+            </div>
+            <div class="featured-images">
+                <h3>Featured Images</h3>
+                <div class="image-gallery">
+                    <img src="https://via.placeholder.com/150" alt="Image 1" />
+                    <img src="https://via.placeholder.com/150" alt="Image 2" />
+                    <img src="https://via.placeholder.com/150" alt="Image 3" />
+                    <img src="https://via.placeholder.com/150" alt="Image 4" />
+                    </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Wikipedia. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Wikipedia Redesign | All Rights Reserved</p>
+        </div>
     </footer>
+
 </body>
 </html>
